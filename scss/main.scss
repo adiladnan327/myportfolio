@@ -6,7 +6,7 @@ $background-opacity: 0.9;
 
 
 
-@mixin easOut{
+@mixin easeOut{
     transition: all 0.5s ease-out;
 
 }
@@ -31,6 +31,9 @@ $background-opacity: 0.9;
         }
     }
 }
+@import 'menu';
+@import 'config';
+
 
 *{
     box-sizing: border-box;
@@ -90,7 +93,7 @@ main {
             padding: 0.4rem;
             &:hover{
                 color: $secondary-color;
-                @include easOut();
+                @include easeOut();
 
             }
         }
